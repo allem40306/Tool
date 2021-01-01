@@ -6,7 +6,6 @@ import tarfile
 import py7zr
 from shutil import copy
 
-# dst_dir = r"C:\Users\USER\Downloads\20201115232743_第一次上機考20201020_32份"
 tar_dir = r"C:\Users\USER\Downloads\results"
 root_dir = os.getcwd()
 
