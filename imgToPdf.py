@@ -13,4 +13,4 @@ for image in imagelist:
 			print(image + "is GG")
 			pass
 print("OK")
-pdf.output("yourfile.pdf", "F")
+pdf.output("picture.pdf", "F")
