@@ -1,5 +1,6 @@
 import glob
 from PyPDF2 import PdfFileWriter, PdfFileReader
+
 def merger(output_path, input_paths):
     pdf_writer = PdfFileWriter()
     for path in input_paths:
@@ -8,6 +9,7 @@ def merger(output_path, input_paths):
             pdf_writer.addPage(pdf_reader.getPage(page))
     with open(output_path, 'wb') as fh:
         pdf_writer.write(fh)
+
 if __name__ == '__main__':
     paths = glob.glob('*.pdf')
     paths.sort()
