@@ -1,0 +1,10 @@
+ffmpeg-python
+future
+Pillow
+pyee
+PyPDF2
+typing_extensions
+youtube-dl
+tqdm
+fitz
+PyMuPDF==1.19.0
