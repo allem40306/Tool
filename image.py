@@ -4,7 +4,7 @@ from PIL import Image
 from tqdm import tqdm
 
 def imageConvert(inputFolder, outputFolder):
-    imageList = [".webp",".tif"]
+    imageList = [".webp",".tif",".jpx"]
     for file in os.listdir(inputFolder):
         filename, file_extension = os.path.splitext(file)
         if file_extension.lower() in imageList:
@@ -30,5 +30,3 @@ def imageToPdf(inputFolder):
         fullPath = f"{inputFolder}/{path}"
         if os.path.isdir(fullPath):
             imgToPdf(fullPath, path)
-
-fileArrange("D:\Tool\in", 0)  #f"{os.getcwd()}/image_in"
